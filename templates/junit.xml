@@ -1,0 +1,11 @@
+<templateSet group="junit">
+  <template name="junit" value="@Test&#10;public void $testMethod$(){&#10;//given&#10;String message = &quot;Test $testMethod$ zawiódł&quot;;&#10;$END$&#10;//when&#10;&#10;//then&#10;&#10;fail(message);&#10;}" toReformat="false" toShortenFQNames="true">
+    <variable name="testMethod" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="&lt;abbreviation&gt;" value="@Test&#10;public void $testMethod$(){&#10;//given&#10;$END$&#10;//when&#10;&#10;//then&#10;&#10;&#10;}" toReformat="false" toShortenFQNames="true">
+    <variable name="testMethod" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+</templateSet>
